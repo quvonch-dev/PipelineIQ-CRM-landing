@@ -26,3 +26,4 @@ Bu loyiha PipelineIQ CRM SaaS landing page dizaynidan ilhomlangan statik HTML/CS
 - Dark mode
 - Signup form interaction
 # PipelineIQ-CRM-landing
+# PipelineIQ-CRM-landing
