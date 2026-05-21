@@ -1,29 +1,23 @@
 # PipelineIQ Static Clone
 
-Bu loyiha PipelineIQ CRM SaaS landing page dizaynidan ilhomlangan statik HTML/CSS/JS loyiha.
+This is a static HTML/CSS/JS landing page inspired by the PipelineIQ Colorlib template.
 
-## Fayllar
+## Files
 
 - `index.html`
 - `css/style.css`
-- `js/main.js`
+- `css/media.css`
+- `js/script.js`
 
-## Ishga tushirish
+## How to run
 
-1. Papkani VS Code’da oching.
-2. `index.html` faylini browserda oching.
-3. Yoki Live Server extension orqali ishga tushiring.
+Open `index.html` in your browser.
 
-## Nimalar bor?
+## Features
 
 - Responsive navbar
-- Hero dashboard preview
-- Features cards
-- Automation workflow
-- Integrations
-- ROI calculator
-- Pricing monthly/yearly toggle
-- Dark mode
-- Signup form interaction
-# PipelineIQ-CRM-landing
-# PipelineIQ-CRM-landing
+- Hero section with dashboard preview
+- Stats, features, workflow, integrations, pricing, testimonial and CTA sections
+- Dark mode toggle with localStorage
+- Back-to-top button
+- Trial form JavaScript interaction
