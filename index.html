@@ -3,413 +3,300 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PipelineIQ - CRM SaaS Landing Page</title>
-  <meta name="description" content="PipelineIQ inspired CRM SaaS landing page with dashboard, pricing, integrations and ROI calculator." />
+  <title>PipelineIQ - CRM SaaS Landing</title>
+  <meta name="description" content="PipelineIQ CRM SaaS landing page static clone." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
   <header class="site-header" id="top">
-    <nav class="nav container">
-      <a href="#top" class="logo">
-        <span class="logo-mark"><i class="ri-bar-chart-box-line"></i></span>
-        PipelineIQ
+    <div class="container nav-wrapper">
+      <a href="#top" class="logo" aria-label="PipelineIQ home">
+        <span class="logo-icon">P</span>
+        <span>Pipeline <strong>IQ</strong></span>
       </a>
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#workflow">Workflow</a></li>
-        <li><a href="#integrations">Integrations</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
+      <nav class="navbar" id="navbar">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <i class="ri-moon-clear-line"></i>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">
+          <i class="ri-moon-line"></i>
         </button>
-        <a href="#trial" class="btn btn-small">Start trial</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <a href="#trial" class="btn btn-primary nav-cta">Start Free Trial</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
           <i class="ri-menu-3-line"></i>
         </button>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">
-            <i class="ri-sparkling-line"></i>
-            Revenue pipeline command center
-          </span>
-          <h1>Close more deals with a CRM your sales team actually loves.</h1>
-          <p>
-            PipelineIQ helps teams track every lead, automate follow-ups, forecast revenue,
-            and see exactly where deals slow down.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#trial" class="btn">Start free trial</a>
-            <a href="#dashboard" class="btn btn-ghost">
-              <i class="ri-play-circle-line"></i>
-              View dashboard
-            </a>
-          </div>
-
-          <div class="hero-stats">
-            <div>
-              <strong>42%</strong>
-              <span>Faster deal cycles</span>
-            </div>
-            <div>
-              <strong>3.8x</strong>
-              <span>More pipeline visibility</span>
-            </div>
-            <div>
-              <strong>24/7</strong>
-              <span>Automation tracking</span>
-            </div>
-          </div>
+    <section class="hero section-dark">
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="badge"><span></span> Trusted by 10,000+ sales teams worldwide</div>
+        <h1>Close More Deals with <span>Smart Pipelines</span></h1>
+        <p class="hero-text">PipelineIQ is the modern CRM that helps sales teams manage pipelines, automate outreach, and close deals faster with AI-powered insights.</p>
+        <div class="hero-buttons">
+          <a href="#trial" class="btn btn-primary">Start Free Trial <i class="ri-arrow-right-line"></i></a>
+          <a href="#demo" class="btn btn-secondary"><i class="ri-calendar-line"></i> Book a Demo</a>
         </div>
 
-        <div class="dashboard-shell" id="dashboard">
-          <div class="browser-bar">
-            <span></span><span></span><span></span>
-            <p>app.pipelineiq.io</p>
-          </div>
+        <div class="hero-line"></div>
 
-          <div class="dashboard-card main-chart">
-            <div class="card-top">
+        <div class="mini-stats">
+          <div><strong>10K+</strong><span>Teams Worldwide</span></div>
+          <div><strong>50M+</strong><span>Deals Tracked</span></div>
+          <div><strong>99.9%</strong><span>Uptime SLA</span></div>
+          <div><strong>4.9/5</strong><span>User Rating</span></div>
+        </div>
+
+        <div class="dashboard-card" id="demo">
+          <div class="dashboard-top">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <p>app.pipelineiq.com/dashboard</p>
+          </div>
+          <div class="dashboard-body">
+            <div class="dashboard-title">
               <div>
-                <span>Pipeline value</span>
-                <h3>$428,500</h3>
+                <span>Revenue Pipeline</span>
+                <h3>$2.4M</h3>
               </div>
-              <b>+18.4%</b>
+              <strong>+24% this month</strong>
             </div>
-            <div class="bars">
-              <span style="height:45%"></span>
-              <span style="height:72%"></span>
-              <span style="height:60%"></span>
-              <span style="height:88%"></span>
-              <span style="height:52%"></span>
-              <span style="height:78%"></span>
-              <span style="height:96%"></span>
-            </div>
-          </div>
-
-          <div class="dashboard-row">
-            <div class="mini-card">
-              <i class="ri-user-follow-line"></i>
-              <span>Qualified leads</span>
-              <strong>1,248</strong>
-            </div>
-            <div class="mini-card">
-              <i class="ri-checkbox-circle-line"></i>
-              <span>Won deals</span>
-              <strong>312</strong>
-            </div>
-          </div>
-
-          <div class="kanban">
-            <div>
-              <b>New</b>
-              <span>24 deals</span>
-              <article></article>
-              <article></article>
-            </div>
-            <div>
-              <b>Proposal</b>
-              <span>18 deals</span>
-              <article></article>
-              <article></article>
-            </div>
-            <div>
-              <b>Closing</b>
-              <span>9 deals</span>
-              <article></article>
-              <article></article>
+            <div class="pipeline-row">
+              <div class="pipe-card blue"><span>Qualified</span><b>42</b><i></i></div>
+              <div class="pipe-card sky"><span>Proposal</span><b>28</b><i></i></div>
+              <div class="pipe-card amber"><span>Negotiation</span><b>15</b><i></i></div>
+              <div class="pipe-card green"><span>Closed Won</span><b>$890K</b><i></i></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="logos section-sm">
-      <div class="container logo-strip">
-        <span>Trusted by revenue teams at</span>
-        <b>Northstar</b>
-        <b>Hublane</b>
-        <b>Cloudora</b>
-        <b>SignalFox</b>
-        <b>OrbitCRM</b>
+    <section class="stat-strip">
+      <div class="container stat-strip-inner">
+        <div><strong>10K+</strong><span>Teams Worldwide</span></div>
+        <div><strong>50M+</strong><span>Deals Tracked</span></div>
+        <div><strong>99.9%</strong><span>Uptime SLA</span></div>
+        <div><strong>$2.1B</strong><span>Revenue Generated</span></div>
       </div>
     </section>
 
     <section class="section" id="features">
       <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Startup features</span>
-          <h2>Everything your team needs to manage leads, deals and growth.</h2>
-          <p>Visual pipeline tools, sales automation, customer history and simple reports in one clean workspace.</p>
+        <div class="section-heading">
+          <span class="eyebrow">Smart CRM Features</span>
+          <h2>Everything your sales team needs to move faster</h2>
+          <p>Track deals, automate repetitive work, and turn every lead into a clear next step.</p>
         </div>
 
-        <div class="feature-grid">
+        <div class="features-grid">
           <article class="feature-card">
-            <i class="ri-layout-masonry-line"></i>
-            <h3>Pipeline visualization</h3>
-            <p>Drag deals through stages and see where revenue is stuck before it is too late.</p>
+            <div class="icon"><i class="ri-dashboard-3-line"></i></div>
+            <h3>Pipeline Dashboard</h3>
+            <p>Visual stages, deal health, owner activity, and revenue forecasts in one simple screen.</p>
           </article>
           <article class="feature-card">
-            <i class="ri-git-branch-line"></i>
-            <h3>Automation workflows</h3>
-            <p>Build automatic reminders, email sequences and lead routing rules without code.</p>
+            <div class="icon"><i class="ri-robot-2-line"></i></div>
+            <h3>AI Deal Insights</h3>
+            <p>Spot risky deals, predict win probability, and get smart recommendations before meetings.</p>
           </article>
           <article class="feature-card">
-            <i class="ri-shield-check-line"></i>
-            <h3>Enterprise security</h3>
-            <p>Role permissions, activity logs and secure access controls keep customer data protected.</p>
+            <div class="icon"><i class="ri-loop-left-line"></i></div>
+            <h3>Workflow Automation</h3>
+            <p>Assign tasks, send follow-ups, and update stages automatically when your team takes action.</p>
           </article>
           <article class="feature-card">
-            <i class="ri-line-chart-line"></i>
-            <h3>Revenue forecasting</h3>
-            <p>Track quota, expected close dates and monthly revenue goals with easy dashboards.</p>
+            <div class="icon"><i class="ri-shield-check-line"></i></div>
+            <h3>Enterprise Security</h3>
+            <p>Role-based access, encrypted data, and secure admin controls for fast-growing teams.</p>
           </article>
           <article class="feature-card">
-            <i class="ri-team-line"></i>
-            <h3>Team collaboration</h3>
-            <p>Assign owners, mention teammates and keep every conversation attached to the deal.</p>
+            <div class="icon"><i class="ri-bar-chart-box-line"></i></div>
+            <h3>Revenue Reports</h3>
+            <p>Understand conversion rates, team performance, and monthly recurring revenue at a glance.</p>
           </article>
           <article class="feature-card">
-            <i class="ri-file-chart-line"></i>
-            <h3>Customer stories</h3>
-            <p>Show revenue impact and customer success results with case-study style cards.</p>
+            <div class="icon"><i class="ri-customer-service-2-line"></i></div>
+            <h3>Customer Stories</h3>
+            <p>Keep notes, activities, contact history, and buying signals connected to every account.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section workflow" id="workflow">
+    <section class="section workflow-section" id="about">
       <div class="container workflow-grid">
         <div class="workflow-content">
-          <span class="eyebrow">Automation workflow</span>
-          <h2>Turn messy sales tasks into a repeatable system.</h2>
-          <p>
-            PipelineIQ lets your team automate lead capture, qualification, follow-ups
-            and reporting while managers keep full visibility.
-          </p>
+          <span class="eyebrow">Automation Flow</span>
+          <h2>From lead capture to closed won without busywork</h2>
+          <p>PipelineIQ connects your forms, emails, calls, and pipeline stages so sellers spend less time updating CRM and more time selling.</p>
           <ul class="check-list">
-            <li><i class="ri-check-line"></i> Assign leads based on territory or deal size</li>
-            <li><i class="ri-check-line"></i> Send follow-up reminders automatically</li>
-            <li><i class="ri-check-line"></i> Create weekly revenue reports</li>
+            <li><i class="ri-check-line"></i> Auto-score new leads by intent</li>
+            <li><i class="ri-check-line"></i> Create follow-up tasks after every call</li>
+            <li><i class="ri-check-line"></i> Send notifications when deals are stuck</li>
           </ul>
+          <a href="#pricing" class="btn btn-primary">View Pricing</a>
         </div>
 
-        <div class="flow-board">
-          <div class="flow-step">
-            <i class="ri-mail-send-line"></i>
-            <span>New lead captured</span>
-          </div>
+        <div class="workflow-board">
+          <div class="flow-step active"><i class="ri-user-add-line"></i><span>New lead arrives</span></div>
           <div class="flow-line"></div>
-          <div class="flow-step active">
-            <i class="ri-filter-3-line"></i>
-            <span>Lead scored</span>
-          </div>
+          <div class="flow-step"><i class="ri-mail-send-line"></i><span>AI sends follow-up</span></div>
           <div class="flow-line"></div>
-          <div class="flow-step">
-            <i class="ri-calendar-check-line"></i>
-            <span>Demo scheduled</span>
-          </div>
+          <div class="flow-step"><i class="ri-calendar-check-line"></i><span>Demo booked</span></div>
           <div class="flow-line"></div>
-          <div class="flow-step">
-            <i class="ri-trophy-line"></i>
-            <span>Deal closed</span>
-          </div>
+          <div class="flow-step done"><i class="ri-trophy-line"></i><span>Deal closed</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="integrations">
+    <section class="section integrations" id="integrations">
       <div class="container">
-        <div class="section-title">
+        <div class="section-heading">
           <span class="eyebrow">Integrations</span>
-          <h2>Connect your CRM with the tools you already use.</h2>
-          <p>Keep contacts, calendar events, support tickets and marketing campaigns synced.</p>
+          <h2>Connect your whole sales stack</h2>
+          <p>Sync the tools your team already uses every day.</p>
         </div>
-
         <div class="integration-grid">
-          <article><i class="ri-google-fill"></i><span>Google Workspace</span></article>
-          <article><i class="ri-slack-fill"></i><span>Slack</span></article>
-          <article><i class="ri-mailchimp-fill"></i><span>Mailchimp</span></article>
-          <article><i class="ri-calendar-line"></i><span>Calendar</span></article>
-          <article><i class="ri-notion-fill"></i><span>Notion</span></article>
-          <article><i class="ri-zap-line"></i><span>Zapier</span></article>
-          <article><i class="ri-customer-service-2-line"></i><span>Helpdesk</span></article>
-          <article><i class="ri-bank-card-line"></i><span>Stripe</span></article>
+          <div><i class="ri-google-fill"></i><span>Google</span></div>
+          <div><i class="ri-slack-fill"></i><span>Slack</span></div>
+          <div><i class="ri-mail-line"></i><span>Outlook</span></div>
+          <div><i class="ri-notion-fill"></i><span>Notion</span></div>
+          <div><i class="ri-github-fill"></i><span>GitHub</span></div>
+          <div><i class="ri-stripe-fill"></i><span>Stripe</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section roi-section">
-      <div class="container roi-grid">
-        <div>
-          <span class="eyebrow">ROI calculator</span>
-          <h2>Estimate how much revenue visibility can save your team.</h2>
-          <p>Move the slider and see a simple monthly impact estimate.</p>
-
-          <label class="range-label" for="dealsRange">
-            Monthly deals
-            <strong id="dealCount">80</strong>
-          </label>
-          <input type="range" min="20" max="300" value="80" id="dealsRange">
-        </div>
-
-        <div class="roi-card">
-          <span>Estimated monthly recovered revenue</span>
-          <strong id="roiValue">$24,000</strong>
-          <p>Based on improved follow-up, clearer deal ownership and fewer missed opportunities.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section pricing" id="pricing">
+    <section class="section pricing-section" id="pricing">
       <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Pricing</span>
-          <h2>Simple plans for every sales team.</h2>
-          <p>Start small and upgrade when your pipeline grows.</p>
-        </div>
-
-        <div class="billing-toggle">
-          <span>Monthly</span>
-          <button id="billingToggle" aria-label="Change billing">
-            <span></span>
-          </button>
-          <span>Yearly <b>save 20%</b></span>
+        <div class="section-heading">
+          <span class="eyebrow">Simple Pricing</span>
+          <h2>Choose the plan that fits your team</h2>
+          <p>Start free, then upgrade when your pipeline grows.</p>
         </div>
 
         <div class="pricing-grid">
           <article class="price-card">
             <h3>Starter</h3>
-            <p>For small teams validating a sales process.</p>
-            <strong><span data-monthly="19" data-yearly="15">$19</span><small>/user</small></strong>
+            <p>For small sales teams.</p>
+            <div class="price">$19<span>/mo</span></div>
             <ul>
-              <li><i class="ri-check-line"></i> 3 pipelines</li>
-              <li><i class="ri-check-line"></i> Basic automations</li>
-              <li><i class="ri-check-line"></i> Email support</li>
+              <li><i class="ri-check-line"></i> 3 users included</li>
+              <li><i class="ri-check-line"></i> Basic pipeline board</li>
+              <li><i class="ri-check-line"></i> Email reminders</li>
             </ul>
-            <a href="#trial" class="btn btn-ghost">Choose Starter</a>
+            <a href="#trial" class="btn btn-outline">Get Started</a>
           </article>
 
           <article class="price-card popular">
-            <div class="badge">Popular</div>
+            <div class="popular-label">Most Popular</div>
             <h3>Growth</h3>
-            <p>For teams that need forecasting and reporting.</p>
-            <strong><span data-monthly="49" data-yearly="39">$49</span><small>/user</small></strong>
+            <p>For fast-growing teams.</p>
+            <div class="price">$49<span>/mo</span></div>
             <ul>
-              <li><i class="ri-check-line"></i> Unlimited pipelines</li>
-              <li><i class="ri-check-line"></i> Advanced workflows</li>
-              <li><i class="ri-check-line"></i> Revenue forecast</li>
+              <li><i class="ri-check-line"></i> 15 users included</li>
+              <li><i class="ri-check-line"></i> AI deal insights</li>
+              <li><i class="ri-check-line"></i> Automation workflows</li>
+              <li><i class="ri-check-line"></i> Advanced reports</li>
             </ul>
-            <a href="#trial" class="btn">Choose Growth</a>
+            <a href="#trial" class="btn btn-primary">Start Free Trial</a>
           </article>
 
           <article class="price-card">
             <h3>Enterprise</h3>
-            <p>For organizations with security and scale needs.</p>
-            <strong><span data-monthly="99" data-yearly="79">$99</span><small>/user</small></strong>
+            <p>For larger organizations.</p>
+            <div class="price">Custom</div>
             <ul>
-              <li><i class="ri-check-line"></i> SSO and permissions</li>
-              <li><i class="ri-check-line"></i> Audit logs</li>
-              <li><i class="ri-check-line"></i> Priority support</li>
+              <li><i class="ri-check-line"></i> Unlimited users</li>
+              <li><i class="ri-check-line"></i> SSO & admin roles</li>
+              <li><i class="ri-check-line"></i> Dedicated support</li>
             </ul>
-            <a href="#trial" class="btn btn-ghost">Contact sales</a>
+            <a href="#contact" class="btn btn-outline">Contact Sales</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section testimonials">
-      <div class="container testimonial-grid">
-        <article class="quote-card">
-          <i class="ri-double-quotes-l"></i>
-          <p>“PipelineIQ gave our sales managers one clean place to see deals, owners and next actions.”</p>
+    <section class="section testimonial-section" id="blog">
+      <div class="container testimonial-card">
+        <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+        <blockquote>PipelineIQ helped our team understand every deal faster. We reduced manual CRM updates and improved follow-up speed within the first month.</blockquote>
+        <div class="customer">
+          <div class="avatar">AM</div>
           <div>
-            <b>Sarah Morgan</b>
-            <span>VP Sales, Cloudora</span>
+            <strong>Alex Morgan</strong>
+            <span>VP Sales, Northstar Labs</span>
           </div>
-        </article>
-        <article class="quote-card">
-          <i class="ri-double-quotes-l"></i>
-          <p>“The automation board replaced dozens of manual reminders and saved hours every week.”</p>
-          <div>
-            <b>Daniel Lee</b>
-            <span>Revenue Ops, Hublane</span>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section class="cta section" id="trial">
-      <div class="container cta-box">
-        <div>
-          <span class="eyebrow">Free trial signup</span>
-          <h2>Ready to build a smarter sales pipeline?</h2>
-          <p>Create a workspace, invite your team and start tracking deals today.</p>
-        </div>
-
-        <form class="signup-form" id="signupForm">
-          <input type="email" placeholder="Work email" required>
-          <select required>
-            <option value="">Team size</option>
-            <option>1-5</option>
-            <option>6-20</option>
-            <option>21-100</option>
-            <option>100+</option>
+    <section class="cta-section" id="trial">
+      <div class="container cta-card">
+        <span class="eyebrow">Free Trial</span>
+        <h2>Ready to build a smarter sales pipeline?</h2>
+        <p>Try PipelineIQ with your team and see how automated CRM workflows can save hours every week.</p>
+        <form class="trial-form">
+          <input type="email" placeholder="Enter your work email" required>
+          <select aria-label="Team size">
+            <option>1-5 team members</option>
+            <option>6-20 team members</option>
+            <option>21-50 team members</option>
+            <option>50+ team members</option>
           </select>
-          <button class="btn" type="submit">Start free trial</button>
-          <small id="formMessage"></small>
+          <button class="btn btn-primary" type="submit">Start Free Trial</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container footer-grid">
       <div>
-        <a href="#top" class="logo">
-          <span class="logo-mark"><i class="ri-bar-chart-box-line"></i></span>
-          PipelineIQ
-        </a>
-        <p>Modern CRM landing page built with clean HTML, CSS and JavaScript.</p>
+        <a href="#top" class="logo footer-logo"><span class="logo-icon">P</span><span>Pipeline <strong>IQ</strong></span></a>
+        <p>Modern CRM landing page clone built with HTML, CSS and JavaScript.</p>
       </div>
-
       <div>
         <h4>Product</h4>
         <a href="#features">Features</a>
-        <a href="#workflow">Workflow</a>
         <a href="#pricing">Pricing</a>
+        <a href="#integrations">Integrations</a>
       </div>
-
       <div>
         <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Customers</a>
-        <a href="#">Blog</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </div>
-
       <div>
-        <h4>Social</h4>
-        <a href="#"><i class="ri-twitter-x-line"></i> Twitter</a>
-        <a href="#"><i class="ri-linkedin-box-line"></i> LinkedIn</a>
-        <a href="#"><i class="ri-github-line"></i> GitHub</a>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#"><i class="ri-twitter-x-line"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
       </div>
     </div>
+    <div class="container copyright">© 2026 PipelineIQ. Static demo project.</div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
